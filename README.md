@@ -80,7 +80,7 @@ Unfixed Bugs
     * From the source section drop-down menu, select the Main Branch
     * Then, the page provided the link to the completed website. 
 
-    Here's the link for Japanese Curry Fun Club: (https://micmic210.github.io/curry-fun-club/)
+    [Here's my site:](https://micmic210.github.io/curry-fun-club/)
 
 ## Credits
 
