@@ -1,0 +1,638 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #696969;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 1px;
+    color: #d77921;
+}
+
+header {
+    background-color: #3a3a3a;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+
+/* Header section */
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Hero section */
+#hero {
+    background-image: url(../images/curry-variation.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#cover-text {
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+#cover-text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#cover-text p {
+    color: #d77921;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Introduction section*/
+#introduction {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.column-2 {
+    width: 48%;
+}
+
+.text {
+    line-height: 2;
+}
+
+.introduction-img {
+    background-image: url(../images/curry-rice2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 10px;
+}
+
+/* End of introduction section */
+
+/* About section */
+#about {
+    margin-bottom: 40px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+.about-img {
+    background-image: url(../images/curry-pod.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 10px;
+}
+
+/* End of about section */
+
+/* Mission & activities sections*/
+#mission {
+    margin-bottom: 40px;
+}
+
+.mission-img {
+    background-image: url(../images/mission.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 10px;
+}
+
+#mission-list,
+#activity-list {
+    line-height: 1.5;
+    list-style: none
+}
+
+#activities {
+    margin-bottom: 30px;
+}
+
+#activities h2 {
+    margin-bottom: 20px;
+}
+
+.activities-img {
+    background-image: url(../images/activities.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 10px;
+}
+
+/* Endo of mission & activities section */
+
+/* Gallery section */
+.column-a {
+    background-image: url(../images/baked-curry.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.column-b {
+    background-image: url(../images/croque.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.column-c {
+    background-image: url(../images/curry-bread.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.column-d {
+    background-image: url(../images/curry-udon.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* End of gallery section */
+/* Footer section */
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+.footer-logo p {
+    font-size: medium;
+    color: #d77921;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: small;
+    text-align: center;
+    color: #696969;
+    margin-bottom: 50px;
+}
+
+/* End of footer section */
+
+/* media quary for index page */
+@media only screen and (max-width: 768px) {
+
+    header h2 {
+        font-size: x-large;
+    }
+
+    #hero {
+        height: 250px;
+    }
+
+    #cover-text h1 {
+        font-size: 20px;
+    }
+
+    #cover-text p {
+        font-size: 17px;
+    }
+
+    #introduction h2,
+    #about h2,
+    #mission h2,
+    #activities h2 {
+        font-size: large;
+        line-height: 1.5;
+    }
+
+    .column-2 {
+        width: 100%;
+    }
+
+    .text {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    .introduction-img {
+        margin-top: 30px;
+        height: 220px;
+    }
+
+    .about-img {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .mission-img {
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .activities-img {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    #mission-list,
+    #activity-list {
+        font-size: 15px;
+        margin-left: 20px;
+        line-height: 1.5;
+    }
+
+    .column-a,
+    .column-b,
+    .column-c,
+    .column-d {
+        width: 48%;
+        height: 140px;
+        margin: 1%;
+    }
+}
+
+/* History page */
+.general-info {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.general-info h2 {
+    margin-bottom: 16px;
+}
+
+.general-info p {
+    margin-bottom: 16px;
+}
+
+.history-curry {
+    border-radius: 10px;
+}
+
+#history-box dl {
+    max-width: 1100px;
+    margin-left: auto;
+}
+
+#history-box dt {
+    width: 25%;
+    height: 120px;
+    padding: 24px 0;
+    font-weight: 500;
+}
+
+#history-box dd {
+    width: 75%;
+    height: 120px;
+    padding: 24px 0;
+    line-height: 1.5;
+}
+
+.description {
+    color: #d77921;
+    font-weight: 700;
+}
+
+/* End of history page */
+
+/* media quary for history page */
+@media only screen and (max-width: 768px) {
+
+    .general-info {
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .history-curry {
+        width: 75%;
+    }
+
+    #history-box dt {
+        width: 100%;
+        height: 16px;
+        font-weight: 500;
+    }
+
+    #history-box dd {
+        width: 100%;
+        height: 140px;
+        padding: 0;
+        line-height: 1.2;
+    }
+}
+
+/* Recipes Page */
+
+#basic-curry {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#ingredients {
+    margin-bottom: 40px;
+}
+
+#basic-curry-rice li {
+    line-height: 1.7;
+    margin-left: 40px;
+}
+
+#preparations {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#how-to li {
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 1.3;
+}
+
+.vegetables-img {
+    background-image: url(../images/curry-set.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 270px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.katsu-curry-img {
+    background-image: url(../images/katstu-curry-2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 270px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#variations h3 {
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: 700;
+}
+
+/* End of recipe page */
+
+/* Media quary for receipes page */
+@media only screen and (max-width: 768px) {
+
+    .vegetables-img {
+        width: 100%;
+        height: 220px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #basic-curry-rice li {
+        line-height: 1.3;
+        margin-left: 40px;
+    }
+
+    #preparations {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #how-to li {
+        margin-left: 40px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .youtube {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .youtube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .katsu-curry-img {
+        width: 100%;
+        height: 220px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Membership page */
+
+#memberships {
+    background-image: url("../images/members.jpg");
+    background-size: cover;
+    background-position: 75%;
+    padding: 50px 30% 0 30%;
+    margin-top: 60px;
+    flex-grow: 1;
+}
+
+#membership-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#membership-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #d77921;
+    color: #fafafa;
+}
+
+/* End of membership page */
+
+/* Media quary for membership page */
+@media only screen and (max-width: 768px) {
+
+    #memberships {
+        background-position: 75%;
+        padding: 50px 10% 30%;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        background-color: #3a3a3a;
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        font-weight: 700;
+    }
+
+    #menu {
+        display: flex;
+        margin-top: 18px;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
