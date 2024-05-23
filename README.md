@@ -1,1 +1,1 @@
-# curry-fun-club
+# Japanese Curry Fun Club
