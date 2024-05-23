@@ -70,12 +70,12 @@ The website offers a variety of content, including: recipes, cooking tips, ingre
      ![Screenshot of validator results](https://micmic210.github.io/curry-fun-club/assets/images/lighthouse-score.png)
 
 Unfixed Bugs
-    * I was not able to fix bugs on unused codes in CSS. This is because I have created the website from PC view first and needed to add some media quaries that override the original code. I wanted to fix this issue, but I was running out the time. From next time, I will make sure to start with the smaller divices so that there would not be any redundant codes. 
+    I was not able to fix bugs on unused codes in CSS. This is because I have created the website from PC view first and needed to add some media quaries that override the original code. I wanted to fix this issue, but I was running out the time. From next time, I will make sure to start with the smaller divices so that there would not be any redundant codes. 
 
-    * Moreover, my HTML has too much ids and classes that have confused me in the end. I should carefuuly plan the overall structure to prevent my codes from being complicated. 
+    Moreover, my HTML has too much ids and classes that have confused me in the end. I should carefuuly plan the overall structure to prevent my codes from being complicated. 
 
 ## Deployment 
-    * The site was deployed to GitHub pages as following:
+    * The site was deployed to GitHub pages as follows:
     * In the GitHub repository, go to the Setting tab
     * From the source section drop-down menu, select the Main Branch
     * Then, the page provided the link to the completed website. 
