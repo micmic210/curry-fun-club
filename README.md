@@ -7,7 +7,7 @@ It serves as a comprehensive resource for anyone interested in this popular and 
 The website offers a variety of content, including: recipes, cooking tips, ingredients information, cultural insights and community interaction. 
 
 ![Screenshot of a responsive design]
-(画像)
+(https://micmic210.github.io/curry-fun-club/assets/images/responsive.png)
 
 ## Features
 ＊ Navigation
@@ -66,10 +66,10 @@ Unfixed Bugs
 ## Deployment 
     * The site was deployed to GitHub pages as following:
     * In the GitHub repository, go to the Setting tab
-    * From the source section drop-down menu, select the Master Branch
+    * From the source section drop-down menu, select the Main Branch
     * Then, the page provided the link to the completed website. 
 
-    The live link: (Japanese Curry Fun Club)
+    The live link: ( https://micmic210.github.io/curry-fun-club/)
 
 ## Credits
 
