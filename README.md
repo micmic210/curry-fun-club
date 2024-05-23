@@ -10,28 +10,37 @@ The website offers a variety of content, including: recipes, cooking tips, ingre
 (https://micmic210.github.io/curry-fun-club/assets/images/responsive.png)
 
 ## Features
-＊ Navigation
+* Navigation
     * Featured at the top of the page, the navigation shows the club name in the left. 
-    * The other navigation buttons are linked to separate pages such as History, Recipe and Membership. 
- (index page画像)  
 
-* The about Japanese curry section 
-    * This section gives a rouch idea of "What Japanese curry is, and shows a picture of a typical Japanese curry rice. 
+    * The other navigation buttons are linked to separate pages such as History, Recipe and Membership.  
 
-* Our mission section 
-    * Our mission of the Japanese Curry Fan Club is to celebrate and promote the appreciation of Japanese curry. 
+### Home page includes: 
 
-    * The club aims to connect enthusiasts, share recipes and cooking tips, and explore the cultural significance and regional variations of this beloved dish.
+* Introduction     
+    * This section welcomes visitors of the website. 
 
+* About Japanese Curry
+    * This section explains in what sense Japanese Curry is different from other Asian curries. 
 
-* The activities and benefits section
-    * This section advises lists of wh
+* Our Mission 
+    * This section explains about the mission of the Japanese Curry Fan Club.  
+
+* Activities and Benefits 
+    * This section briefly explains activities and benefits that people can join after becoming a member of this club. 
     
-    * This section gives ideas of what they can get when they become members. 
+* Galley 
+    * This section introduces variation of Japanese curry: Baked Curry, Curry Croquette, Curry Bread and Curry Udon. 
 
+### History page:
+    * This page explains the history of Japanese curry: How it is introduced, adapted and popularized, culturally integrated and influenced globally. 
 
-* The galley section 
-    * The galley section introduces variation of Japanese curry: Baked Curry, Curry Croquette, Curry Bread and Curry Udon. 
+### Recipe page:
+    * This page includes basic ingredients and preparations of Japanese curry accompanied by youtube video (Mr. Joshua Weissmann) for your convenience. 
+
+### Membership page 
+    * This is a sign-up form for being a member of Japanese Curry Club. 
+
 
 ## Testing 
 
@@ -40,6 +49,7 @@ The website offers a variety of content, including: recipes, cooking tips, ingre
     * I confirmed that the all sections on each three pages are readable.
 
     * I have confirmed that the form works fine: all fields need to be entered to submit the form. 
+
 
 ## Bugs 
 
@@ -57,6 +67,7 @@ The website offers a variety of content, including: recipes, cooking tips, ingre
     * Accessibility 
         * I confirmed accessbility through lighthouse in devtools. 
 
+     ![Screenshot of validator results](https://micmic210.github.io/curry-fun-club/assets/images/lighthouse-score.png)
 
 Unfixed Bugs
     * I was not able to fix bugs on unused codes in CSS. This is because I have created the website from PC view first and needed to add some media quaries that override the original code. I wanted to fix this issue, but I was running out the time. From next time, I will make sure to start with the smaller divices so that there would not be any redundant codes. 
@@ -69,7 +80,7 @@ Unfixed Bugs
     * From the source section drop-down menu, select the Main Branch
     * Then, the page provided the link to the completed website. 
 
-    The live link: ( https://micmic210.github.io/curry-fun-club/)
+    Here's the link for Japanese Curry Fun Club: (https://micmic210.github.io/curry-fun-club/)
 
 ## Credits
 
