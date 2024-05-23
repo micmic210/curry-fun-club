@@ -111,7 +111,7 @@ nav {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 120px;
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -272,6 +272,7 @@ nav {
 }
 
 /* End of gallery section */
+
 /* Footer section */
 
 #social-networks {
@@ -506,7 +507,7 @@ span {
 
 /* End of recipe page */
 
-/* Media quary for receipes page */
+/* Media quary for recipes page */
 @media only screen and (max-width: 768px) {
 
     .vegetables-img {
@@ -600,19 +601,15 @@ span {
 
 /* End of membership page */
 
-/* Media quary for membership page */
-@media only screen and (max-width: 768px) {
-
-    #memberships {
-        background-position: 75%;
-        padding: 50px 10% 30%;
-    }
-}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /* Header */
+    .logo h2 {
+        font-size: x-large;
+    }
+
     nav {
         background-color: #3a3a3a;
         display: block;
@@ -620,7 +617,7 @@ span {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     #menu {
@@ -634,5 +631,53 @@ span {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #hero {
+        margin-top: 100px;
+    }
+
+    #memberships {
+        background-position: 75%;
+        padding: 150px 15% 25%;
+    }
+
+    #menu {
+        font-size: 100%;
+        letter-spacing: 1px;
+    }
+}
+
+/* Media query: smaller smart phone (max 370px) */
+@media screen and (max-width: 370px) {
+
+    /* Header */
+    .logo h2 {
+        font-size: medium;
+    }
+
+    #hero {
+        margin-top: 80px;
+    }
+
+    #history-box dd {
+        height: 180px;
+    }
+
+    #history-box dt {
+        margin-top: 20px;
+    }
+}
+
+/* Media query: smaller smart phone (max 480px) */
+@media screen and (max-width: 480px) {
+
+    #hero {
+        margin-top: 80px;
+    }
+
+    #memberships {
+        margin-top: 15px;
+        padding: 120px 10% 20%;
     }
 }
