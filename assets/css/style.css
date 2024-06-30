@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* General */
+/* General body settings*/
 body {
     min-height: 100vh;
     display: flex;
@@ -18,10 +18,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Poppins font for elements with class 'pop' */
 .pop {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Container settings */
 .container {
     width: 95%;
     max-width: 1120px;
@@ -29,6 +31,7 @@ body {
     position: relative;
 }
 
+/* Flexbox utility class */
 .flex {
     display: flex;
     justify-content: space-between;
@@ -36,13 +39,14 @@ body {
     align-items: center;
 }
 
+/* Headings styles */
 h1,
 h2,
 h3 {
     letter-spacing: 1px;
     color: #d77921;
 }
-
+/* Header section */
 header {
     background-color: #3a3a3a;
     padding: 0 1rem;
@@ -52,19 +56,20 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
-/* Header section */
+/* Header links */
 header a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Logo styles */
 .logo {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -.04em;
     text-decoration: none;
 }
-
+/* Navigation styles */
 nav {
     position: absolute;
     background-color: white;
@@ -75,7 +80,7 @@ nav {
     display: none;
     top: 100%;
 }
-
+/* Navigation toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -87,7 +92,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-
+/* Menu styles */
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -97,7 +102,7 @@ nav {
 #menu>li {
     margin-bottom: 1em;
 }
-
+/* Active menu item */
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -116,6 +121,7 @@ nav {
     overflow: hidden;
 }
 
+/* Hero section overlay */
 #hero::before {
     content: '';
     width: 100%;
@@ -127,7 +133,7 @@ nav {
     opacity: 0.6;
     z-index: 1;
 }
-
+/* Hero section text */
 #cover-text {
     z-index: 2;
     width: 100%;
@@ -146,7 +152,7 @@ nav {
     font-weight: 500;
 }
 
-/* Introduction section*/
+/* Introduction section */
 #introduction {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -159,7 +165,7 @@ nav {
 .text {
     line-height: 2;
 }
-
+/* Introduction image */
 .introduction-img {
     background-image: url(../images/curry-rice2.jpg);
     background-position: center;
@@ -167,8 +173,6 @@ nav {
     height: 340px;
     border-radius: 10px;
 }
-
-/* End of introduction section */
 
 /* About section */
 #about {
@@ -178,7 +182,7 @@ nav {
 #about h2 {
     margin-bottom: 20px;
 }
-
+/* About image */
 .about-img {
     background-image: url(../images/curry-pod.jpeg);
     background-position: center;
@@ -187,9 +191,8 @@ nav {
     border-radius: 10px;
 }
 
-/* End of about section */
 
-/* Mission & activities sections*/
+/* Mission & activities sections */
 #mission {
     margin-bottom: 40px;
 }
@@ -205,7 +208,7 @@ nav {
 #mission-list,
 #activity-list {
     line-height: 1.5;
-    list-style: none
+    list-style: none;
 }
 
 #activities {
@@ -215,7 +218,7 @@ nav {
 #activities h2 {
     margin-bottom: 20px;
 }
-
+/* Activities image */
 .activities-img {
     background-image: url(../images/activities.jpg);
     background-position: center;
@@ -224,11 +227,12 @@ nav {
     border-radius: 10px;
 }
 
-/* Endo of mission & activities section */
 
 /* Gallery section */
-.column-a {
-    background-image: url(../images/baked-curry.jpeg);
+.column-a,
+.column-b,
+.column-c,
+.column-d {
     background-position: center;
     background-size: cover;
     width: 24%;
@@ -238,40 +242,20 @@ nav {
     margin-bottom: 40px;
 }
 
+.column-a {
+    background-image: url(../images/baked-curry.jpeg);
+}
 .column-b {
     background-image: url(../images/croque.jpeg);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .column-c {
     background-image: url(../images/curry-bread.jpeg);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .column-d {
     background-image: url(../images/curry-udon.jpeg);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
-
-/* End of gallery section */
 
 /* Footer section */
 
@@ -304,7 +288,7 @@ nav {
 
 /* End of footer section */
 
-/* media quary for index page */
+/* Media query for index page */
 @media only screen and (max-width: 768px) {
 
     header h2 {
@@ -422,7 +406,7 @@ nav {
 
 /* End of history page */
 
-/* media quary for history page */
+/* media query for history page */
 @media only screen and (max-width: 768px) {
 
     .general-info {
@@ -475,7 +459,7 @@ nav {
     margin-left: 30px;
     line-height: 1.3;
 }
-
+/* Images on the recipes page */
 .vegetables-img {
     background-image: url(../images/curry-set.jpg);
     background-position: center;
@@ -485,7 +469,7 @@ nav {
     border-radius: 5px;
     margin-top: 20px;
 }
-
+/* Variations heading */
 .katsu-curry-img {
     background-image: url(../images/katstu-curry-2.jpg);
     background-position: center;
@@ -496,7 +480,7 @@ nav {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
+/* Emphasized text */
 #variations h3 {
     margin-bottom: 20px;
 }
@@ -505,9 +489,8 @@ span {
     font-weight: 700;
 }
 
-/* End of recipe page */
 
-/* Media quary for recipes page */
+/* Media query for recipes page */
 @media only screen and (max-width: 768px) {
 
     .vegetables-img {
@@ -532,7 +515,7 @@ span {
         line-height: 1.1;
         margin-bottom: 20px;
     }
-
+/* Responsive YouTube embed */
     .youtube {
         position: relative;
         padding-bottom: 56.25%;
@@ -567,7 +550,7 @@ span {
     margin-top: 60px;
     flex-grow: 1;
 }
-
+/* Membership form */
 #membership-form {
     color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
@@ -578,7 +561,7 @@ span {
     color: #fafafa;
     margin-bottom: 20px;
 }
-
+/* Text input fields */
 .text-input {
     background: transparent;
     color: #fafafa;
@@ -589,7 +572,7 @@ span {
     border-radius: 2px;
     padding: 0 5px;
 }
-
+/* Join button */
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
@@ -599,17 +582,16 @@ span {
     color: #fafafa;
 }
 
-/* End of membership page */
 
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /* Header */
+    /* Header logo size*/
     .logo h2 {
         font-size: x-large;
     }
-
+/* Navigation for larger screens */
     nav {
         background-color: #3a3a3a;
         display: block;
@@ -651,7 +633,7 @@ span {
 /* Media query: smaller smart phone (max 370px) */
 @media screen and (max-width: 370px) {
 
-    /* Header */
+    /* Header logo size*/
     .logo h2 {
         font-size: medium;
     }
@@ -669,7 +651,7 @@ span {
     }
 }
 
-/* Media query: smaller smart phone (max 480px) */
+/* Media query: smaller smartphone (max 480px) */
 @media screen and (max-width: 480px) {
 
     #hero {
